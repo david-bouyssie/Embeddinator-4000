@@ -527,13 +527,13 @@ namespace Embeddinator
             var clBin = string.Empty;
             var clLib = string.Empty;
 
-            const string clArch = "x86";
+            const string clArch = "x64";
 
             var isVS2017OrGreater = (int)vsSdk.Version >= (int)VisualStudioVersion.VS2017;
             if (isVS2017OrGreater)
             {
                 var clBaseDir = Directory.EnumerateDirectories(Path.Combine(vsSdk.Directory, @"..\..\VC\Tools\MSVC")).Last();
-                clBin = Path.Combine(clBaseDir, $"bin\\Hostx86\\{clArch}\\cl.exe");
+                clBin = Path.Combine(clBaseDir, $"bin\\Hostx64\\{clArch}\\cl.exe");
                 clLib = Path.Combine(clBaseDir, $"lib\\{clArch}");
             }
             else
