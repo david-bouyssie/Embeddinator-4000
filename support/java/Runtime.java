@@ -32,8 +32,8 @@ import com.sun.jna.*;
 import java.util.*;
 
 public final class Runtime {
-    interface RuntimeLibrary extends com.sun.jna.Library {
-        static interface ErrorType {
+    public interface RuntimeLibrary extends com.sun.jna.Library {
+        public static interface ErrorType {
             public static final int MONO_EMBEDDINATOR_OK = 0;
             /** Mono managed exception */
             public static final int MONO_EMBEDDINATOR_EXCEPTION_THROWN = 1;
