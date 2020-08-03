@@ -311,7 +311,10 @@ char* mono_embeddinator_error_to_string(mono_embeddinator_error_t error)
     case MONO_EMBEDDINATOR_OK:
         return "No error";
     case MONO_EMBEDDINATOR_EXCEPTION_THROWN:
-        return "Mono threw a managed exception";
+        if (error.exception)
+            return mono_string_to_utf8(mono_object_to_string(error.exception, NULL));
+        else
+            return "Mono threw a managed exception";
     case MONO_EMBEDDINATOR_ASSEMBLY_OPEN_FAILED:
         return "Mono failed to load assembly";
     case MONO_EMBEDDINATOR_CLASS_LOOKUP_FAILED:
