@@ -94,6 +94,9 @@
     <Compile Include="../../external/Xamarin.Android.Tools/src/Xamarin.Android.Tools.AndroidSdk/FileUtil.cs">
       <Link>external/Xamarin.Android.Tools/src/Xamarin.Android.Tools.AndroidSdk/FileUtil.cs</Link>
     </Compile>
+    <Compile Include="../../external/Xamarin.Android.Tools/src/Xamarin.Android.Tools.AndroidSdk/JdkInfo.cs">
+      <Link>external/Xamarin.Android.Tools/src/Xamarin.Android.Tools.AndroidSdk/JdkInfo.cs</Link>
+    </Compile>
     <Compile Include="../../external/Xamarin.Android.Tools/src/Xamarin.Android.Tools.AndroidSdk/OS.cs">
       <Link>external/Xamarin.Android.Tools/src/Xamarin.Android.Tools.AndroidSdk/OS.cs</Link>
     </Compile>
@@ -108,9 +111,6 @@
     </Compile>
     <Compile Include="../../external/Xamarin.Android.Tools/src/Xamarin.Android.Tools.AndroidSdk/Sdks/AndroidSdkWindows.cs">
       <Link>external/Xamarin.Android.Tools/src/Xamarin.Android.Tools.AndroidSdk/Sdks/AndroidSdkWindows.cs</Link>
-    </Compile>
-    <Compile Include="..\..\external\Xamarin.Android.Tools\src\Xamarin.Android.Tools.AndroidSdk\JdkInfo2.cs">
-      <Link>external\Xamarin.Android.Tools\src\JdkInfo2.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>
