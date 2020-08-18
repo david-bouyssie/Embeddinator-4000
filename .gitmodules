@@ -6,7 +6,7 @@
 	url = https://github.com/philsquared/Catch.git
 [submodule "CppSharp"]
 	path = external/CppSharp
-	url = https://github.com/mono/CppSharp
+	url = https://github.com/david-bouyssie/CppSharp.git
 [submodule "Xamarin.MacDev"]
 	path = external/Xamarin.MacDev
 	url = https://github.com/xamarin/Xamarin.MacDev.git
