@@ -328,6 +328,11 @@ char* mono_embeddinator_error_to_string(mono_embeddinator_error_t error)
     g_assert_not_reached();
 }
 
+char* mono_embeddinator_error_ptr_to_string(mono_embeddinator_error_t* error)
+{
+    return mono_embeddinator_error_to_string(*error);
+}
+
 static void mono_embeddinator_report_error_and_abort(mono_embeddinator_error_t error)
 {
     fprintf(stderr, "Embeddinator error: %s.\n", mono_embeddinator_error_to_string(error));

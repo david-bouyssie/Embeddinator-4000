@@ -157,6 +157,9 @@ typedef struct
 MONO_EMBEDDINATOR_API
 char* mono_embeddinator_error_to_string(mono_embeddinator_error_t error);
 
+MONO_EMBEDDINATOR_API
+char* mono_embeddinator_error_ptr_to_string(mono_embeddinator_error_t* error);
+
 /**
  * Fires an error and calls the installed error hook for handling.
  */
